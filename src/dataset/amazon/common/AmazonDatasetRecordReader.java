@@ -68,8 +68,8 @@ public class AmazonDatasetRecordReader extends RecordReader<LongWritable, Text> 
 					byte[] rawline = s.getBytes();
 					int rawlinelen = s.length();
 					lineValue.append(rawline, 0, rawlinelen);
-					appended = !StringUtils.endsWith(lineRecord
-							.getCurrentValue().toString(), " .");
+//					appended = !StringUtils.endsWith(lineRecord
+//							.getCurrentValue().toString(), " .");
 				} else {
 					appended = false;
 				}
